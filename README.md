@@ -1,60 +1,103 @@
-# Product Funnel Analysis for SaaS FinTech
+# 📊 SaaS FinTech Revenue Funnel Analysis
 
-## Executive Summary:
+Welcome to the Revenue Funnel Analysis project for a SaaS FinTech product!  
+This project dives deep into the product funnel, using SQL, Python, and data visualization techniques to identify drop-off points and suggest actionable improvements to boost revenue.
 
-Using SQL, Python, and Power BI, I pulled order status data from the database and created a dashboard to track orders through the funnel. After identifying that the largest revenue opportunities are to increase user interaction rate and completed login attempts, I recommend that the product team implements a few adjustments that will lead to higher conversion:
+---
 
-1. Copy changes within the workflow
-2. Reminder emails/texts
-3. Better client relationships
+## 🚀 Project Goal
 
+The goal is to identify where users are falling off in the order funnel and simulate potential revenue gains by improving interaction and login completion rates.
 
-### Business Problem: 
+---
 
-Completed orders are essential for this SaaS Fintech company since they're directly tied to revenue. Product and sales stakeholders have noticed that the product has a lower conversion rate than expected (based on users who start orders vs. complete the order). How can we determine where users are falling out of the workflow and make product adjustments to encourage users to complete their orders? 
+## 📁 Folder Structure
 
-![Screenshot 2024-05-25 at 2 05 24 PM](https://github.com/jessramosdata/Product-Funnel-SaaS-FinTech/assets/59672972/be7317e4-175b-4442-8091-8c4fb99854ac)
+📦Product-Funnel-SaaS-FinTech
+├── Revenue Optimization Model VOIE.ipynb # Python analysis notebook
+├── product funnel max status sql # SQL queries for funnel stages
+├── Order Completion Flowchart and Metrics.pdf # Power BI insights
+├── README.md # This file
 
+yaml
+Copy
+Edit
 
+---
 
-### Methodology: 
+## 🧪 Tech Stack Used
 
-1. SQL query that extracts, cleans, and transforms the data from the database.
-   
-2. Build a dashboard in Power BI that tracks the number of orders in each status.
+- **Python**: Data analysis, simulation, visualizations (`pandas`, `matplotlib`)
+- **SQL**: Data extraction, transformation, cleaning
+- **Power BI**: Dashboard creation and reporting
+- **Streamlit** *(optional)*: For deployment as a web app
 
-3. Conduct a more detailed funnel analysis in Python to simulate changes and determine the best areas of opportunity.
+---
 
+## 📊 Funnel Overview
 
-### Skills:
+| Stage               | Users |
+|---------------------|--------|
+| Started             | 3055   |
+| Interacted          | 1380   |
+| Login Attempted     | 1053   |
+| Login Completed     | 320    |
+| Order Completed     | 351    |
 
-SQL: CTEs, Joins, Case, aggregate functions
+---
 
-Power BI: Dax, writing functions, ETL, calculated columns, data visualization, data modeling
+## 📈 Key Insights
 
-Python: Pandas, Matplotlib, Numpy, Writing functions, building a product funnel, statistics
+- Almost **50%** of users drop off before interaction.
+- Less than **25%** successfully complete login.
+- **1% increase** in user interaction can yield **$285/day**
+- **1% increase** in login completion can yield **$405/day**
 
+---
 
-### Results & Business Recommendation: 
+## 💡 Business Recommendations
 
-Creating a dashboard to track product orders gives product and sales stakeholders visibility into the product funnel both overall and for specific clients. Because of democratizing this data, stakeholders are now able to self serve, and the analytics team now has 5 less hours of ad hoc requets per week. This analysis showed us that almost 50% of orders fall out before entering the workflow, and less than 25% of users enter their correct banking credentials to connect their account. According to the model built in Python, increasing user interaction rates by 1% will result in $285 more in daily revenue and increasing completed bank login attempts by 1% will result in $405 more in daily revenue.
+1. Add reminder emails/texts to inactive users.
+2. Improve workflow copy (mention duration, use progress bar).
+3. Guide users at the bank login stage.
+4. Empower client teams (like mortgage lenders) to assist users.
 
-![Screenshot 2024-05-25 at 2 04 48 PM](https://github.com/jessramosdata/Product-Funnel-SaaS-FinTech/assets/59672972/d8cbde85-be7e-4c16-a132-02a63e357b1d)
+---
 
+## 🧠 How to Run (Locally)
 
-Because the biggest revenue impacts will likely come from increasing the user interaction rate & completed login attempts, I recommend a few product adjustments: 
+### 📌 Requirements:
+- Python 3.x installed
+- Jupyter or VS Code with Python extension
 
-1. Send inactive users reminder emails and texts to encourage them to enter the platform to complete their order.
-2. Work with clients (mortgage lenders) to help coach the users through the process and see the value in doing so.
-3. Add copy at the beginning of the workflow stating that the process only takes 5 min, and feature a progress bar throughout.
-4. Add copy at the bank login page to encourage users to look up their credentials to make sure they're correct.
+### ▶️ Steps:
+```bash
+pip install pandas numpy matplotlib
+Then open and run:
 
-I believe these adjustments will best tackle the largest workflow fallout points, increase conversion & revenue, and save the analytics team hours per week from a decrease in ad hoc requests.
+nginx
+Copy
+Edit
+Revenue Optimization Model VOIE.ipynb
+🌐 Optional: Deploy as Web App
+You can deploy the analysis as a live dashboard using Streamlit:
 
-### Next Steps: 
+bash
+Copy
+Edit
+pip install streamlit
+streamlit run app.py
+(Ask me for app.py if needed.)
 
-1. AB Test copy within the workflow
-2. Train clients and users
-3. Measure email and text open & click rates
+🧾 License
+MIT License. Use freely, but give credit if helpful 🙂
 
+🤝 Connect
+Made with ❤️ by [Aviral Trivedi]
+Reach out on LinkedIn or raise an issue for help!
 
+yaml
+Copy
+Edit
+
+---
